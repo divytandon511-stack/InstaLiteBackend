@@ -1,0 +1,5 @@
+/lab-13/solution.md
+node_modules/
+.env
+prisma/*.db
+prisma/*.db-journal

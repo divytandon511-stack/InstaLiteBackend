@@ -12,7 +12,7 @@ const server = app.listen(port, () => {
 
 const shutdown = async () => {
   await app.locals.prisma.$disconnect();
-  server.close();
+  server.close(() => process.exit(0));
 };
 
 process.on("SIGINT", shutdown);
